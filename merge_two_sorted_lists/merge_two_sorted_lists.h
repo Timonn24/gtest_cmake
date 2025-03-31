@@ -1,6 +1,5 @@
 #pragma once
 
-
 struct ListNode 
 {
     int val;
@@ -13,5 +12,6 @@ struct ListNode
 class Solution 
 {
 public:
+    /*in-place merge */
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2);
 };
