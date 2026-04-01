@@ -2,7 +2,8 @@
 
 #include <initializer_list>
 
-#include <gtest\gtest.h>
+#include <gtest/gtest.h>
+
 
 ListNode* create_list(std::initializer_list<int> lst)
 {

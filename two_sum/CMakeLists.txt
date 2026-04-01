@@ -1,7 +1,14 @@
 file(GLOB SOURCES "*.cpp" "*.h")
 
-add_executable(two_sum ${SOURCES})
+#include(googletest)
 
-target_link_libraries(two_sum PRIVATE GTest::gtest GTest::gtest_main)
+add_executable(two_sum_test ${SOURCES})
 
-#add_test(NAME all_tests COMMAND two_sum)
+target_link_libraries(two_sum_test 
+    PRIVATE 
+    gtest 
+    gtest_main
+)
+
+include(GoogleTest)
+gtest_discover_tests(two_sum_test)
