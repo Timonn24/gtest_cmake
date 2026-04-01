@@ -1,13 +1,13 @@
 file(GLOB SOURCES "*.cpp" "*.h")
 
-add_executable(best_time_to_buy_and_sell_stocks ${SOURCES})
+add_executable(best_time_to_buy_and_sell_stocks_test ${SOURCES})
 
 target_link_libraries(
-    best_time_to_buy_and_sell_stocks 
+    best_time_to_buy_and_sell_stocks_test 
     PRIVATE 
     gtest 
     gtest_main
 )
 
 include(GoogleTest)
-gtest_discover_tests(best_time_to_buy_and_sell_stocks)
+gtest_discover_tests(best_time_to_buy_and_sell_stocks_test)
