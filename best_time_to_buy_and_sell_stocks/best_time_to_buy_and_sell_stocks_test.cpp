@@ -1,6 +1,6 @@
 #include "best_time_to_buy_and_sell_stocks.h"
 
-#include <gtest\gtest.h>
+#include <gtest/gtest.h>
 
 TEST(BestBuyAndSell, Example1)
 {
