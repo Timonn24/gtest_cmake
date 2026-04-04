@@ -77,3 +77,17 @@ TEST(MergeTwoSortedList, Example2)
     dispose(merged);
     dispose(ethalon);
 }
+
+TEST(MergeTwoSortedList, Example3)
+{
+    auto l1 = create_list({2,2,4,5,8,9});
+    auto l2 = create_list({0,1,3});
+    const auto ethalon = create_list({0,1,2,2,3,4,5,8,9});
+
+    auto merged = Solution::mergeTwoLists3(l1, l2);
+
+    EXPECT_TRUE(compare_eq_lists(merged, ethalon)) << "Lists are not equal!";
+
+    dispose(merged);
+    dispose(ethalon);
+}

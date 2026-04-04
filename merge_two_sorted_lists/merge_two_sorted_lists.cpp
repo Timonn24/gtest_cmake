@@ -41,3 +41,26 @@ Solution::mergeTwoLists2(ListNode* list1, ListNode* list2)
 
     return fake_head.next;
 }
+
+ListNode*
+Solution::mergeTwoLists3(ListNode* list1, ListNode* list2)
+{
+    ListNode* head {nullptr};
+    ListNode** pptr {&head};
+
+    while(list1 && list2) {
+        if(list1->val <= list2->val) {
+            *pptr = list1;
+            list1 = list1->next;
+        }
+        else {
+            *pptr = list2;
+            list2 = list2->next;
+        }
+        pptr = &((*pptr)->next);
+    }
+    
+    *pptr = list1 ? list1 :list2;
+
+    return head;
+}
