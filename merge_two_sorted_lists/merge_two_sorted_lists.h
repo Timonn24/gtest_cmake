@@ -13,6 +13,9 @@ struct ListNode
 class Solution 
 {
 public:
-    /*in-place merge */
+    /* in-place merge O(n) speed, O(n) space */
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2);
+
+    /* in-place merge O(n) speed, O(1) space */
+    ListNode* mergeTwoLists2(ListNode* list1, ListNode* list2);
 };
