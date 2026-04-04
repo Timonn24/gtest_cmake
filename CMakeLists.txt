@@ -22,6 +22,7 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
+add_subdirectory(common)
 add_subdirectory(two_sum)
 add_subdirectory(merge_two_sorted_lists)
 add_subdirectory(best_time_to_buy_and_sell_stocks)

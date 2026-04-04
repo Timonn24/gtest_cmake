@@ -7,6 +7,7 @@ target_link_libraries(
         PRIVATE 
         gtest 
         gtest_main
+        common
 )
 
 include(GoogleTest)
